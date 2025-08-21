@@ -9,6 +9,7 @@ public class Config {
 	private static Config config;
 	private String pathFile;
 	private String nameFileCSV;
+	private String nameFileJson;
 	private String nameFile;
 	private Properties properties;
 	
@@ -20,6 +21,7 @@ public class Config {
             this.pathFile = properties.getProperty("app.config.path.files");
             this.nameFile =  properties.getProperty("app.config.path.file.name.txt");
             this.nameFileCSV = properties.getProperty("app.config.path.file.name.csv");
+            this.nameFileJson = properties.getProperty("app.config.path.file.name.json");
         } catch (IOException ex) {
             System.err.println("Error al cargar el archivo properties de configuración: " + ex.getMessage());
         }
@@ -33,6 +35,15 @@ public class Config {
 	}
 	
 	
+	
+	public String getNameFileJson() {
+		return nameFileJson;
+	}
+
+	public void setNameFileJson(String nameFileJson) {
+		this.nameFileJson = nameFileJson;
+	}
+
 	public String getNameFileCSV() {
 		return nameFileCSV;
 	}

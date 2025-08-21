@@ -10,7 +10,7 @@ import com.edu.uptc.proyectBook.persistence.ProyectPersistenceBook;
 
 import junit.framework.Assert;
 
-class proyectBookTest {
+class ProyectBookTest {
 
 	private ProyectPersistenceBook proyectPersistenceBook = new ProyectPersistenceBook();
 	@Test
