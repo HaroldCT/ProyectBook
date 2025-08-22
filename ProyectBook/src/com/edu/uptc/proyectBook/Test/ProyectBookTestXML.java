@@ -1,37 +1,23 @@
 package com.edu.uptc.proyectBook.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.ArrayList;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-
 import com.edu.uptc.proyectBook.enums.ETypeFileEnum;
 import com.edu.uptc.proyectBook.model.Book;
 import com.edu.uptc.proyectBook.persistence.ProyectPersistenceBook;
 
 
 
-class ProyectBookTestJson {
-	
+class ProyectBookTestXML {
 	private ProyectPersistenceBook proyectPersistenceBook = new ProyectPersistenceBook();
 
 	@Test
 	void test() {
 		this.scenarieOne();
-		this.proyectPersistenceBook.dumpFile(ETypeFileEnum.JSON);
+		this.proyectPersistenceBook.dumpFile(ETypeFileEnum.XML);
 	}
-	
-	void test2() {
-		this.proyectPersistenceBook.setListBook(new ArrayList<>());// prueba de q cerro el programa
-		Assert.assertEquals(0, this.proyectPersistenceBook.getListBook().size());
-		
-		this.proyectPersistenceBook.loadFile(ETypeFileEnum.JSON);//Simulacion de q volvio a ejecutar el programa
-		Assert.assertEquals("El principito", this.proyectPersistenceBook.getListBook().get(0).getName());
-		
-	}
-	
+
 	private void scenarieOne() {
 		Book book1 = new Book("El principito", "Del Toro", "Caricaturesco", "Columbia", 100, 1001);
 		Book book2 = new Book("Rayuela", "Camilo", "Tragico", "Columbia", 110, 1002);
@@ -45,5 +31,14 @@ class ProyectBookTestJson {
 		this.proyectPersistenceBook.addBook(book4);
 		this.proyectPersistenceBook.addBook(book5);
 	}
-
+	
+	@Test
+	void test2() {
+		this.proyectPersistenceBook.setListBook(new ArrayList<>());//Prueba de q cerro el programa
+		Assert.assertEquals(0, this.proyectPersistenceBook.getListBook().size());
+		
+		this.proyectPersistenceBook.loadFile(ETypeFileEnum.XML);//Simulacion de volvio a ejecutar el programa
+		Assert.assertEquals("El principito", this.proyectPersistenceBook.getListBook().get(0).getName());
+		Assert.assertEquals("Tragico", this.proyectPersistenceBook.getListBook().get(1).getGenre());
+	}
 }

@@ -1,0 +1,47 @@
+<XML version="1.0" encoding="UTF-8">
+<book>
+
+	<name>El principito</name>
+	<author>Del Toro</author>
+	<genre>Caricaturesco</genre>
+	<publisher>Columbia</publisher>
+	<numberPages>100</numberPages>
+	<isbn>1001</isbn>
+</book>
+<book>
+
+	<name>Rayuela</name>
+	<author>Camilo</author>
+	<genre>Tragico</genre>
+	<publisher>Columbia</publisher>
+	<numberPages>110</numberPages>
+	<isbn>1002</isbn>
+</book>
+<book>
+
+	<name>El bosque susurrante</name>
+	<author>Emily Carter</author>
+	<genre>Fantasia</genre>
+	<publisher>Monlight Press</publisher>
+	<numberPages>412</numberPages>
+	<isbn>1003</isbn>
+</book>
+<book>
+
+	<name>Bajo las olas</name>
+	<author>James Holloway</author>
+	<genre>Aventura</genre>
+	<publisher>Oceanic House</publisher>
+	<numberPages>421</numberPages>
+	<isbn>1004</isbn>
+</book>
+<book>
+
+	<name>Satanas</name>
+	<author>Mario Mendoza</author>
+	<genre>Realismo magico</genre>
+	<publisher>Panamericana</publisher>
+	<numberPages>368</numberPages>
+	<isbn>1005</isbn>
+</book>
+</XML>

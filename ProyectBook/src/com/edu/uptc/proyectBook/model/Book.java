@@ -1,6 +1,8 @@
 package com.edu.uptc.proyectBook.model;
 
-public class Book {
+import java.io.Serializable;
+
+public class Book implements Serializable{
 
 	private String name;
 	private String author;

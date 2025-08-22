@@ -11,25 +11,22 @@ import com.edu.uptc.proyectBook.enums.ETypeFileEnum;
 import com.edu.uptc.proyectBook.model.Book;
 import com.edu.uptc.proyectBook.persistence.ProyectPersistenceBook;
 
+class ProyectBookTestSer {
 
-
-class ProyectBookTestJson {
-	
 	private ProyectPersistenceBook proyectPersistenceBook = new ProyectPersistenceBook();
-
 	@Test
 	void test() {
 		this.scenarieOne();
-		this.proyectPersistenceBook.dumpFile(ETypeFileEnum.JSON);
+		this.proyectPersistenceBook.dumpFile(ETypeFileEnum.SER);
 	}
 	
+	@Test
 	void test2() {
-		this.proyectPersistenceBook.setListBook(new ArrayList<>());// prueba de q cerro el programa
+		this.proyectPersistenceBook.setListBook(new ArrayList<>());// Prueba de q cerro el programa
 		Assert.assertEquals(0, this.proyectPersistenceBook.getListBook().size());
 		
-		this.proyectPersistenceBook.loadFile(ETypeFileEnum.JSON);//Simulacion de q volvio a ejecutar el programa
+		this.proyectPersistenceBook.loadFile(ETypeFileEnum.SER);// Simulacio de q volvio a ejecutar el programa
 		Assert.assertEquals("El principito", this.proyectPersistenceBook.getListBook().get(0).getName());
-		
 	}
 	
 	private void scenarieOne() {
