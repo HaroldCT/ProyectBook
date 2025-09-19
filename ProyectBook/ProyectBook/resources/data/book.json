@@ -1,0 +1,50 @@
+[
+  {
+    "name": "El principito",
+    "author": "Del Toro",
+    "genre": "Caricaturesco",
+    "publisher": "Columbia",
+    "numberPages": 100,
+    "isbn": 1001
+  },
+  {
+    "name": "Rayuela",
+    "author": "Camilo",
+    "genre": "Tragico",
+    "publisher": "Columbia",
+    "numberPages": 110,
+    "isbn": 1002
+  },
+  {
+    "name": "El bosque susurrante",
+    "author": "Emily Carter",
+    "genre": "Fantasia",
+    "publisher": "Monlight Press",
+    "numberPages": 412,
+    "isbn": 1003
+  },
+  {
+    "name": "Bajo las olas",
+    "author": "James Holloway",
+    "genre": "Aventura",
+    "publisher": "Oceanic House",
+    "numberPages": 421,
+    "isbn": 1004
+  },
+  {
+    "name": "Satanas",
+    "author": "Mario Mendoza",
+    "genre": "Realismo magico",
+    "publisher": "Panamericana",
+    "numberPages": 368,
+    "isbn": 1005
+  },
+  {
+    "name": "La Peste",
+    "author": "Cortazar",
+    "genre": "Fantasia",
+    "publisher": "NLibros",
+    "numberPages": 156,
+    "isbn": 1006
+  }
+]
